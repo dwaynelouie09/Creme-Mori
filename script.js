@@ -31,7 +31,7 @@ const cand=x=>{
   let v=[b];
   forms.forEach(f=>{sep.forEach(c=>v.push(f.replace(/\s*\/\s*/g,c)));v.push(f.split(/\s*\/\s*/)[0])});
   v=[...new Set(v.map(f=>f.replace(/\s+/g,' ').trim()))];
-  v.forEach(f=>['jpg','png'].forEach(e=>o.push(f+'.'+e)));return o};
+  v.forEach(f=>['jpg','JPG','jpeg','png','PNG','webp'].forEach(e=>o.push(f+'.'+e)));return o};
 const pic=x=>`<img src="images/${encodeURI(cand(x)[0])}" alt="${x.n}" data-i="0" loading="lazy" onerror="nextImg(this)">`;
 function nextImg(el){const x=products.find(p=>p.n===el.alt);if(!x){el.remove();return}
   const c=cand(x),i=+el.dataset.i+1;

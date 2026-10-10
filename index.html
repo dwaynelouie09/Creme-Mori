@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crème Mori — Bakery</title>
+<link rel="icon" type="image/png" href="images/Logo.png">
+<link rel="apple-touch-icon" href="images/Logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bar">Freshly baked daily · Order by noon for same-day pickup</div>
+
+<header class="site">
+  <a class="logo" href="#home"><img src="images/logo.png" alt="" onerror="this.remove()"><span>Crème Mori</span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#home" data-p="home">Home</a>
+    <a href="#bakery" data-p="bakery" data-f="all">Bakegoods</a>
+    <a href="#bakery" data-f="drinks">Drinks</a>
+    <a href="#about" data-p="about">About Us</a>
+    <a href="#contact" data-p="contact">Contact</a>
+    <a class="only-m" href="#bakery" data-f="all">Order now</a>
+  </nav>
+  <div class="actions">
+    <a class="find" href="#contact">Find a store</a>
+    <a class="pill solid" href="#bakery" data-f="all">Order now</a>
+  </div>
+</header>
+
+<main>
+<!-- HOME -->
+<section class="page" id="home">
+  <div class="split">
+    <div class="art" style="background:#ecc994">
+      <img src="images/Home.jpg" alt="Hero Page">
+    </div>
+    <div class="copy brown">
+      <p class="sub">“Too good to gatekeep.”</p>
+      <h1>Bake the cookies</h1>
+      <p>Crème Mori bakes cookies, buns and pastries by hand every morning. Pick your favorites, we’ll have them warm and ready.</p>
+      <a class="pill cream" href="#bakery" data-f="cookies">Order now</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <h2>Featured</h2>
+    <div class="tiles">
+      <article class="promo">
+        <div class="img"><img src="images/Ube Cheese Croissant.jpg" alt="Ube cheese croissant" loading="lazy" onerror="this.remove()"></div>
+        <h3>Ube Cheese Croissant</h3><p>Flaky, buttery and filled with purple yam cream and a molten cheese center.</p>
+        <a class="pill" href="#bakery" data-f="croissant">Order now</a>
+      </article>
+      <article class="promo">
+        <div class="img"><img src="images/Spanish Latte.jpg" alt="Spanish latte" loading="lazy" onerror="this.remove()"></div>
+        <h3>Spanish Latte</h3><p>Espresso, fresh milk and sweetened condensed milk for a rich, velvety finish.</p>
+        <a class="pill" href="#bakery" data-f="drinks">Order now</a>
+      </article>
+      <article class="promo">
+        <div class="img"><img src="images/Burnt Basque Cheesecake Slice.jpg" alt="Burnt Basque cheesecake" loading="lazy" onerror="this.remove()"></div>
+        <h3>Burnt Basque Cheesecake</h3><p>Crustless, ultra-creamy and topped with a caramelized, rustic crust.</p>
+        <a class="pill" href="#bakery" data-f="cake">Order now</a>
+      </article>
+    </div>
+  </div>
+
+  <div class="split sandbg rev">
+    <div class="art" style="background:var(--coral)"><img src="images/Oven.jpg" alt="Fresh bakes at dawn" loading="lazy" onerror="this.remove()"></div>
+    <div class="copy">
+      <h2>Baked at dawn, every day</h2>
+      <p>Our ovens fire up before sunrise so your croissants, ensaimada and cookies reach the counter warm. When they’re gone, they’re gone.</p>
+      <a class="pill solid" href="#about">Our story</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <h2>Explore the menu</h2>
+    <div class="circles">
+      <a href="#bakery" data-f="cake"><span class="dot"><img src="images/cakes.jpg" alt="Cakes and tarts" loading="lazy" onerror="this.remove()"></span>Cakes &amp; Tarts</a>
+      <a href="#bakery" data-f="pastry"><span class="dot"><img src="images/pastries.jpg" alt="Pastries" loading="lazy" onerror="this.remove()"></span>Pastries</a>
+      <a href="#bakery" data-f="croissant"><span class="dot"><img src="images/Croissant.jpg" alt="Croissants" loading="lazy" onerror="this.remove()"></span>Croissants</a>
+            <a href="#bakery" data-f="cookies"><span class="dot"><img src="images/cookies.jpg" alt="Cookies" loading="lazy" onerror="this.remove()"></span>Cookies</a>
+      <a href="#bakery" data-f="drinks"><span class="dot"><img src="images/drinks.jpg" alt="Drinks" loading="lazy" onerror="this.remove()"></span>Drinks</a>
+    </div>
+  </div>
+
+  <div class="split brown">
+    <div class="art" style="background:#7a4a36"><img src="images/Order.jpg" alt="Order ahead" loading="lazy" onerror="this.remove()"></div>
+    <div class="copy">
+      <h2>Order ahead, skip the line</h2>
+      <p>Choose your treats online and pick them up warm. Orders placed by noon are ready the same day.</p>
+      <a class="pill cream" href="#bakery" data-f="all">Start an order</a>
+    </div>
+  </div>
+</section>
+
+<!-- BAKEGOODS -->
+<section class="page" id="bakery">
+  <div class="page-head"><div>
+    <h1>Your only dose of delight</h1>
+    <p>Everything is made from scratch in small batches. Pick a category to see what’s fresh today.</p>
+  </div></div>
+  <div class="wrap">
+    <div class="menu-wrap">
+      <div class="side" id="filters" aria-label="Categories"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="page" id="about">
+  <div class="split brown rev">
+    <div class="art" style="background:var(--coral)"><img src="images/Team.jpg" alt="Our bakery" loading="lazy" onerror="this.remove()"></div>
+    <div class="copy">
+      <h1>Baked with love since day one</h1>
+      <p>Crème Mori started in a tiny home kitchen with one oven and a cookie recipe that friends kept asking for. Today we still mix, scoop and bake by hand, every single morning.</p>
+      <p>We use real butter, local flour and chocolate we’d happily eat on its own. No shortcuts, no preservatives, just good things baked slowly.</p>
+      <a class="pill cream" href="#contact">Meet the team</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="three">
+      <div><h3>Real ingredients</h3><p>Butter, flour, eggs and chocolate. Nothing you can’t pronounce.</p></div>
+      <div><h3>Made by hand</h3><p>Every dough is mixed, shaped and baked in small batches.</p></div>
+      <div><h3>Baked daily</h3><p>Fresh each morning, so what you buy today was made today.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="page" id="contact">
+  <div class="wrap">
+    <h1 class="contact-h">Get in touch</h1>
+    <p class="contact-p">Questions, custom orders or just want to say hi? Send us a message and we’ll reply within a day.</p>
+    <div class="cols">
+      <div class="panel info">
+        <h3>Visit the bakehouse</h3>
+        <dl style="margin:0">
+          <dt>Our address</dt><dd>Angeles City, Pampanga</dd>
+          <dt>Phone</dt><dd>+09 123 456 7890</dd>
+          <dt>Email</dt><dd>crememori@gmail.com</dd>
+        </dl>
+        <h3>Baking hours</h3>
+        <div class="hours">
+          <b>Monday – Friday</b><span>7:00 AM – 7:00 PM</span>
+          <b>Saturday</b><span>8:00 AM – 6:00 PM</span>
+          <b>Sunday</b><span>8:00 AM – 3:00 PM</span>
+        </div>
+        <p class="note">Custom orders need 48 hours’ notice.</p>
+      </div>
+      <form id="form" novalidate>
+        <h3 style="font-size:.9rem">Send us a message</h3>
+        <label for="n">Your name</label><input id="n" required placeholder="Jane Doe" autocomplete="name">
+        <label for="e">Email address</label><input id="e" type="email" required placeholder="jane@example.com" autocomplete="email">
+        <label for="s">Subject</label><input id="s" placeholder="What’s this about?">
+        <label for="m">Message</label><textarea id="m" required placeholder="Tell us more…"></textarea>
+        <p class="err" id="err" role="alert"></p>
+        <button class="pill solid" type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="fgrid">
+    <div><a class="logo" href="#home"><img src="images/Logo.png" alt="" onerror="this.remove()"><span>Crème Mori</span></a><p>Handmade cookies, buns and pastries baked fresh every morning.</p></div>
+    <div><h4>Menu</h4><ul><li><a href="#bakery" data-f="all">Bakegoods</a></li><li><a href="#bakery" data-f="drinks">Drinks</a></li><li><a href="#bakery" data-f="cookies">Cookies</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#about">About Us</a></li><li><a href="#contact">Contact</a></li><li><a href="#contact">Find a store</a></li></ul></div>
+    <div><h4>Hours</h4><ul><li>Mon – Fri: 7 AM – 7 PM</li><li>Saturday: 8 AM – 6 PM</li><li>Sunday: 8 AM – 3 PM</li></ul></div>
+  </div>
+  <div class="legal">© 2026 Crème Mori. All rights reserved.</div>
+</footer>
+
+<div class="dock"><a class="pill" href="#contact">Find a store</a><a class="pill solid" href="#bakery" data-f="all">Order now</a></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

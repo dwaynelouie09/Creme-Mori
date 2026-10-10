@@ -37,7 +37,7 @@ function nextImg(el){const x=products.find(p=>p.n===el.alt);if(!x){el.remove();r
   const c=cand(x),i=+el.dataset.i+1;
   if(i>=c.length){el.onerror=null;console.warn('No image found for "'+x.n+'". Tried in images/: '+c.join(' | '));el.remove();return}
   el.dataset.i=i;el.src='images/'+encodeURI(c[i])}
-const cats=[['all','All products'],['cake','Cakes & Tarts'],['pastry','Pastries'],['croissant','Croissants'],['cookies','Cookies & Brownies'],['drinks','Drinks']];
+const cats=[['all','All products'],['Cakes','Cakes & Tarts'],['pastry','Pastries'],['croissant','Croissants'],['cookies','Cookies & Brownies'],['drinks','Drinks']];
 let filter='all';
 
 function renderFilters(){
